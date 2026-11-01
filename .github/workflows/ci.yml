@@ -1,6 +1,6 @@
- name: Student Result App CI
+name: Student Result App CI
 
-on:
+"on":
   push:
     branches: [main, student-result-app]
   pull_request:
@@ -9,7 +9,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
